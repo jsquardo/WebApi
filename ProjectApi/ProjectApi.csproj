@@ -8,7 +8,39 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="CSharpier.Core" Version="0.19.1" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.8" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.8">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.8">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="NLog.Extensions.Logging" Version="5.0.4" />
+        <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.6" />
+        <PackageReference Include="Serilog.AspNetCore" Version="6.0.1" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Api\V1\Controllers" />
+      <Folder Include="Api\V1\Models" />
+      <Folder Include="Api\V1\Mappers" />
+      <Folder Include="Core\DTO" />
+      <Folder Include="Core\Entities" />
+      <Folder Include="Core\Services" />
+      <Folder Include="Data\Contexts" />
+      <Folder Include="Data\Migrations" />
+      <Folder Include="Data\Services" />
+      <Folder Include="Infrastructure\Extensions\Auth" />
+      <Folder Include="Infrastructure\Extensions\Logging" />
+      <Folder Include="Infrastructure\Extensions\ProblemDetails" />
+      <Folder Include="Infrastructure\Interfaces" />
+      <Folder Include="Infrastructure\Models" />
+      <Folder Include="Infrastructure\Utils" />
+      <Folder Include="Tests" />
     </ItemGroup>
 
 </Project>
